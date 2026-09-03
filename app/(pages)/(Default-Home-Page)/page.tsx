@@ -3,7 +3,7 @@ import sectionImage from "../../public/images/scandinavian-interior-mockup-wall-
 import diningPhoto from "../../public/images/Mask Group.png"
 import LivingPhoto from "../../public/images/image 100.png"
 import BedroomPhoto from "../../public/images/image 101.png"
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -28,16 +28,16 @@ import rect44 from "../../public/images/Furniture-image/Rectangle 44.png"
 import rect41 from "../../public/images/Furniture-image/Rectangle 41.png"
 import rect43 from "../../public/images/Furniture-image/Rectangle 43.png"
 import rect45 from "../../public/images/Furniture-image/Rectangle 45.png"
-import carousalImg1 from "../../public/images/carousle/Image.png"
-import carousalImg2 from "../../public/images/carousle/Rectangle 25.png"
+// import carousalImg1 from "../../public/images/carousle/Image.png"
+// import carousalImg2 from "../../public/images/carousle/Rectangle 25.png"
 
 
 
-const slides = [
-  { id: 1, img: carousalImg1, num: "01", category: "Bed Room", title: "Inner Peace" },
-  { id: 2, img: carousalImg2, num: "02", category: "Living Room", title: "Nordic Vibe" },
-  { id: 3, img: carousalImg1, num: "03", category: "Dining Room", title: "Cozy Space" },
-];
+// const slides = [
+//   { id: 1, img: carousalImg1, num: "01", category: "Bed Room", title: "Inner Peace" },
+//   { id: 2, img: carousalImg2, num: "02", category: "Living Room", title: "Nordic Vibe" },
+//   { id: 3, img: carousalImg1, num: "03", category: "Dining Room", title: "Cozy Space" },
+// ];
 
 
 
