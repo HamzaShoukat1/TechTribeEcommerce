@@ -1,83 +1,72 @@
-import { Search, ShoppingCart } from "lucide-react"
 import Link from 'next/link'
-import Logo from "../../public/Images/Logo(7).png"
 import Image from "next/image"
-import Person from "../../public/Images/Ellipse 8.png"
+
+// Local image imports
+import logo from "../public/images/Meubel House_Logos-05.png"
+import logoName from "../public/images/SkinClinic.png"
+import personIcon from "../public/images/Vector.png"
+import cart from "../public/images/ant-design_shopping-cart-outlined.png"
+import heart from "../public/images/akar-icons_heart.png"
+import search from "../public/images/akar-icons_search.png"
+
+export { logo, personIcon, cart, heart, search }
 
 const navItems = [
-    { name: "Laptops", route: "/laptops" },
-    { name: "Desktop PCs", route: "/desktops" },
-    { name: "Networking Devices", route: "/networking-devices" },
-    { name: "Printers & Scanners", route: "/printers-scanners" },
-    { name: "PC Parts", route: "/pc-parts" },
-    { name: "All Other Products", route: "/products" },
-    { name: "Repairs", route: "/repairs" }
+    { name: "Home", route: "/home" },
+    { name: "Shop", route: "/shop" },
+    { name: "About", route: "/about" },
+    { name: "Contact", route: "/contact" },
 ]
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-[44px]   w-full max-w-[1550px] items-center  text-center  mx-auto flex justify-center gap-[27px]    bg-white border-b border-gray-200 z-50">
-            <div className="   flex items-center justify-between gap-6">
+        <nav className="  z-50 w-full bg-white py-7 px-10 shadow-sm">
+            <div className="mx-auto flex max-w-[1286px] items-center justify-between w-full">
 
-                <div className="flex-shrink-0">
-                    <Link href="/" className="flex items-center">
-                        <Image 
-                            src={Logo} 
-                            alt="Logo" 
-                            priority 
-                            className="w-[85px] h-auto object-contain" 
-                        />
-                    </Link>
-                </div>
+                {/* Brand Logo Section */}
+                <Link href="/" className="flex items-center gap-1.5 flex-shrink-0">
+                    <Image
+                        src={logo}
+                        alt="Furniro Logo"
+                        priority
+                        className="h-8 w-full max-w-[50px] object-contain"
+                    />
+                    <Image
+                        src={logoName}
+                        alt="Furniro"
+                        className="h-6 w-auto object-contain font-bold"
+                    />
+                </Link>
 
-                <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-semibold text-[#23232C] list-none whitespace-nowrap">
-                    {navItems.map((item, index) => (
-                        <li key={index} className="hover:text-[#0156FF] transition-colors cursor-pointer tracking-normal">
-                            <Link href={item.route}>
-                                {item.name}
-                            </Link>
+                {/* Central Navigation Links */}
+                <ul className="hidden lg:flex items-center font-extrabold  gap-14 font-montserrat text-[16px] font-black text-[#000000]">
+                    {navItems.map((item) => (
+                        <li key={item.name} className="transition-colors  hover:text-gray-600">
+                            <Link href={item.route}>{item.name}</Link>
                         </li>
                     ))}
-
-                    <li>
-                        <Link
-                            href="/deals"
-                            className="border-2 border-[#0156FF] text-[#0156FF] hover:bg-[#0156FF] hover:text-white font-bold px-5 py-2 rounded-full transition-all text-[14px]"
-                        >
-                            Our Deals
-                        </Link>
-                    </li>
                 </ul>
 
-              
+                {/* Utility Actions (Icons) */}
+                <div className="flex items-center gap-8 text-black">
+                    <Link href="/profile" aria-label="Account">
+                        <Image src={personIcon} alt="Account" className="h-6  object-contain w-full max-w-[28px]" />
+                    </Link>
 
-            </div>
-
-            {/* //  */}
-              <div className="flex items-center gap-5 text-[#23232C] flex-shrink-0">
-                    {/* Universal Search Triggers */}
-                    <button aria-label="Search" className="p-1.5 hover:text-[#0156FF] rounded-full transition-colors flex items-center justify-center">
-                        <Search className="w-5 h-5 stroke-[2.5]" />
+                    <button aria-label="Search" className="focus:outline-none">
+                        <Image src={search} alt="Search" className="h-6  object-contain w-full max-w-[28px]" />
                     </button>
 
-                    {/* Shopping Cart Trigger Indicator Overlay Badge */}
-                    <Link href="/cart" aria-label="Shopping Cart" className="p-1.5 hover:text-[#0156FF] rounded-full transition-colors relative flex items-center justify-center">
-                        <ShoppingCart className="w-5 h-5 stroke-[2]" />
-                        <span className="absolute -top-1 -right-1 h-[16px] min-w-[16px] px-1 inline-flex items-center justify-center text-[10px] font-bold text-white bg-[#0156FF] rounded-full">
-                            2
-                        </span>
+                    <Link href="/favorites" aria-label="Favorites">
+                        <Image src={heart} alt="Favorites" className="h-6 w-full max-w-[28px] object-contain" />
                     </Link>
 
-                    {/* Identity Profile Thumbnail Avatar Selection */}
-                    <Link href="/profile" className="flex items-center justify-center w-9 h-9 relative overflow-hidden rounded-full border border-gray-100 ml-1">
-                        <Image 
-                            src={Person} 
-                            alt="User Profile" 
-                            priority 
-                            className="w-full h-full object-cover" 
-                        />
+                    <Link href="/cart" aria-label="Shopping Cart">
+                        <Image src={cart} alt="Cart" className="h-6 object-contain w-full max-w-[28px]" />
                     </Link>
                 </div>
+
+            </div>
         </nav>
     )
 }
