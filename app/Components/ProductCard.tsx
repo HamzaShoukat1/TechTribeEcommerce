@@ -6,7 +6,7 @@ type ProductTypes = {
     image: string | StaticImageData
     heading: string
     paragraph: string
-    price: number
+    price: string
     Label?: string | StaticImageData
     cutPrice?: string
 }
