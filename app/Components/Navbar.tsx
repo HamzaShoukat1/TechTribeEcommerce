@@ -12,7 +12,7 @@ import search from "../public/images/akar-icons_search.png"
 export { logo, personIcon, cart, heart, search }
 
 const navItems = [
-    { name: "Home", route: "/home" },
+    { name: "Home", route: "/" },
     { name: "Shop", route: "/shop" },
     { name: "About", route: "/about" },
     { name: "Contact", route: "/contact" },

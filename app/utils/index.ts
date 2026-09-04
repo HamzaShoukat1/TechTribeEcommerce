@@ -25,23 +25,23 @@ import Label1 from "../public/images/Label.png"
 
 
 export {
-    pro1,
-    pro2,
-    pro3,
-    pro4,
-    pro5,
-    pro6,
-    pro7,
-    pro8,
-    rect36,
-    rect37,
-    rect38,
-    rect39,
-    rect40,
-    rect41,
-    rect43,
-    rect44,
-    rect45
+  pro1,
+  pro2,
+  pro3,
+  pro4,
+  pro5,
+  pro6,
+  pro7,
+  pro8,
+  rect36,
+  rect37,
+  rect38,
+  rect39,
+  rect40,
+  rect41,
+  rect43,
+  rect44,
+  rect45
 }
 
 
@@ -123,5 +123,161 @@ export const PRODUCT_IMAGE_DATA = [
     heading: "Potty",
     paragraph: "Minimalist flower pot",
     price: "Rp 500.000"
+  }
+]
+
+
+
+export const SHOP_IMAGE_DATA = [
+  {
+    id: 1,
+    Label: Label1,
+    image: pro1,
+    heading: "Syltherine",
+    paragraph: "Stylish cafe chair",
+    price: 250000,
+    cutPrice: "Rp 3.500.000",
+  },
+  {
+    id: 2,
+    image: pro2,
+    heading: "Leviosa",
+    paragraph: "Stylish cafe chair",
+    price: 250000,
+
+
+  },
+  {
+    id: 3,
+    Label: Label1,
+    image: pro3,
+    heading: "Lolito",
+    paragraph: "Luxury big sofa",
+    price: 250000,
+
+    cutPrice: "Rp 14.000.000"
+  },
+  {
+    id: 4,
+    Label: Label1,
+    image: pro4,
+    heading: "Respira",
+    paragraph: "Outdoor bar table and stool",
+    price: 250000,
+
+  },
+  {
+    id: 5,
+    image: pro5,
+    heading: "Grifo",
+    paragraph: "Night lamp",
+    price: 250000,
+
+  },
+  {
+    id: 6,
+    Label: Label1,
+    image: pro6,
+    heading: "Muggo",
+    paragraph: "Small mug",
+    price: 250000,
+
+  },
+  {
+    id: 7,
+    Label: Label1,
+    image: pro7,
+    heading: "Pingky",
+    paragraph: "Cute bed set",
+    price: 250000,
+
+    cutPrice: "Rp 14.000.000"
+  },
+  {
+    id: 8,
+    Label: Label1,
+    image: pro8,
+    heading: "Potty",
+    paragraph: "Minimalist flower pot",
+    price: 250000
+  },
+  {
+    id: 9,
+    Label: Label1,
+    image: pro1,
+    heading: "Syltherine",
+    paragraph: "Stylish cafe chair",
+    price: 250000,
+
+    cutPrice: "Rp 3.500.000",
+  },
+  {
+    id: 10,
+    image: pro2,
+    heading: "Leviosa",
+    price: 250000,
+
+
+    paragraph: "Stylish cafe chair",
+  },
+  {
+    id: 11,
+    Label: Label1,
+    image: pro3,
+    heading: "Lolito",
+    paragraph: "Luxury big sofa",
+    price: 250000,
+
+
+    cutPrice: "Rp 14.000.000"
+  },
+  {
+    id: 12,
+    Label: Label1,
+    image: pro4,
+    heading: "Respira",
+    paragraph: "Outdoor bar table and stool",
+    price: 250000,
+
+
+
+  },
+  {
+    id: 13,
+    image: pro5,
+    heading: "Grifo",
+    paragraph: "Night lamp",
+    price: 250000,
+
+  },
+  {
+    id: 14,
+    Label: Label1,
+    image: pro6,
+    heading: "Muggo",
+    paragraph: "Small mug",
+    price: 250000,
+
+
+  },
+  {
+    id: 15,
+    Label: Label1,
+    image: pro7,
+    heading: "Pingky",
+    paragraph: "Cute bed set",
+    price: 250000,
+
+
+    cutPrice: "Rp 14.000.000"
+  },
+  {
+    id: 16,
+    Label: Label1,
+    image: pro8,
+    heading: "Potty",
+    paragraph: "Minimalist flower pot",
+    price: 250000,
+
   }
 ]

@@ -4,7 +4,8 @@ import "./globals.css"
 import Navbar from "@/app/Components/Navbar";
 import Footer from "@/app/Components/Footer";
 
-
+import { CartProvider } from "./context/cartContext";
+import CartSidebar from "./Components/CartSideBar";
 const geistSans = Geist({
     variable: "--font-geist-sans",
     subsets: ["latin"],
@@ -30,7 +31,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body className="flex flex-col flex-1 min-h-screen">
                 <Navbar />
                 <main className="">
-                    {children}
+                    <CartProvider>
+
+                        {children}
+                        <CartSidebar />
+                    </CartProvider>
                 </main>
                 <Footer />
             </body>
