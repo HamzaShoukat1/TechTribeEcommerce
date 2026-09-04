@@ -13,7 +13,6 @@ export default async function ProductDetailsPage({ params }: any) {
     const products = SHOP_IMAGE_DATA.find((item) => item.id == id)
     console.log("sasa", products?.image)
 
-    const img = products?.image
 
     const imageSrc = typeof products?.image === 'object' && 'src' in products.image
         ? products.image.src
@@ -118,7 +117,7 @@ export default async function ProductDetailsPage({ params }: any) {
                         </div>
 
                         {/* Add to Cart CTA */}
-                        <AddToCartButton product={dummyProduct} />
+                        {/* <AddToCartButton product={dummyProduct} /> */}
 
                         <button className='border  cursor-pointer border-black rounded-[15px] hover:bg-black hover:text-white transition duration-300 font-normal text-[20px] w-[215px] h-[64px]'>
                             + Compare
