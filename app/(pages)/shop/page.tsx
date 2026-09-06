@@ -1,6 +1,6 @@
 import shopPageBanner from "../../public/images/Shop-page-images/Rectangle 1(1).png"
 import Image from 'next/image'
-import {  SHOP_IMAGE_DATA } from '@/app/utils'
+import { SHOP_IMAGE_DATA } from '@/app/utils'
 import ProductCard from '@/app/Components/ProductCard'
 import { SlidersHorizontal, LayoutGrid, Rows3 } from 'lucide-react'
 import ShopBanner from "../../public/images/Shop-page-images/Frame 161.png"

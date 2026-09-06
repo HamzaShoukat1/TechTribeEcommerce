@@ -1,137 +1,9 @@
 (globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/app/Components/CartSideBar.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/app/Components/CartSideBar.tsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "default",
-    ()=>CartSidebar
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$cartContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/cartContext.tsx [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-// components/CartSidebar.tsx
-"use client";
-;
-function CartSidebar() {
-    _s();
-    const { isOpen, setIsOpen, cart } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$cartContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCart"])();
-    if (!isOpen) return null;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed inset-0 z-50 flex justify-end bg-black/50",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-80 bg-white h-full p-6 shadow-xl flex flex-col justify-between",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-between items-center mb-4",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-xl font-bold",
-                                    children: "Your Cart"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/Components/CartSideBar.tsx",
-                                    lineNumber: 14,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>setIsOpen(false),
-                                    className: "text-gray-500 font-bold",
-                                    children: "✕"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/Components/CartSideBar.tsx",
-                                    lineNumber: 15,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/Components/CartSideBar.tsx",
-                            lineNumber: 13,
-                            columnNumber: 21
-                        }, this),
-                        cart.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-gray-500",
-                            children: "Cart is empty."
-                        }, void 0, false, {
-                            fileName: "[project]/app/Components/CartSideBar.tsx",
-                            lineNumber: 18,
-                            columnNumber: 25
-                        }, this) : cart.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between py-2 border-b",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: [
-                                            item.name,
-                                            " (x",
-                                            item.quantity,
-                                            ")"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/Components/CartSideBar.tsx",
-                                        lineNumber: 22,
-                                        columnNumber: 33
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: [
-                                            "$",
-                                            item.price * item.quantity
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/Components/CartSideBar.tsx",
-                                        lineNumber: 23,
-                                        columnNumber: 33
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: item.image
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/Components/CartSideBar.tsx",
-                                        lineNumber: 24,
-                                        columnNumber: 33
-                                    }, this)
-                                ]
-                            }, item.id, true, {
-                                fileName: "[project]/app/Components/CartSideBar.tsx",
-                                lineNumber: 21,
-                                columnNumber: 29
-                            }, this))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/Components/CartSideBar.tsx",
-                    lineNumber: 12,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "w-full bg-black text-white py-2 rounded mt-4",
-                    children: "Checkout"
-                }, void 0, false, {
-                    fileName: "[project]/app/Components/CartSideBar.tsx",
-                    lineNumber: 29,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/app/Components/CartSideBar.tsx",
-            lineNumber: 11,
-            columnNumber: 13
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/app/Components/CartSideBar.tsx",
-        lineNumber: 10,
-        columnNumber: 9
-    }, this);
-}
-_s(CartSidebar, "4fjEJu4CpB4qzWgdlksygjlG7GI=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$cartContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCart"]
-    ];
-});
-_c = CartSidebar;
-var _c;
-__turbopack_context__.k.register(_c, "CartSidebar");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
+var e = new Error("Could not parse module '[project]/app/Components/CartSideBar.tsx'\n\nUnexpected character '×'");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 "[project]/app/context/cartContext.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -152,7 +24,9 @@ const CartContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project
     isOpen: false,
     setIsOpen: ()=>{},
     cart: [],
-    addToItem: ()=>{}
+    addToItem: ()=>{},
+    removeItem: ()=>{},
+    subtotal: 0
 });
 const CartProvider = ({ children })=>{
     _s();
@@ -177,17 +51,23 @@ const CartProvider = ({ children })=>{
         });
         setIsOpen(true);
     };
+    const removeItem = (id)=>{
+        setCart((prev)=>prev.filter((item)=>item.id !== id));
+    };
+    const subtotal = cart.reduce((total, item)=>total + item.price * item.quantity, 0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CartContext.Provider, {
         value: {
             isOpen,
             setIsOpen,
             cart,
-            addToItem
+            addToItem,
+            removeItem,
+            subtotal
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/app/context/cartContext.tsx",
-        lineNumber: 63,
+        lineNumber: 74,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

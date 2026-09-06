@@ -1,34 +1,27 @@
 
-
 import Image from 'next/image'
 import { SHOP_IMAGE_DATA } from '@/app/utils'
 import { notFound } from 'next/navigation'
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import ReusableBanner from '@/app/Components/ReusableBanner'
-import AddToCartButton from '@/app/Components/AddToCartButton'
-
-
+import type { CartItem } from '@/app/context/cartContext'
+import ProductInteractiveSection from '@/app/Components/ProductInteractivity'
 export default async function ProductDetailsPage({ params }: any) {
     const { id } = await params
     const products = SHOP_IMAGE_DATA.find((item) => item.id == id)
-    console.log("sasa", products?.image)
-
-
-    const imageSrc = typeof products?.image === 'object' && 'src' in products.image
-        ? products.image.src
-        : (products?.image || "");
-    console.log("....", imageSrc)
-
-    const dummyProduct = {
-        id: products?.id,
-        heading: products?.heading,
-        price: products?.price,
-        image: products?.image.src[0]
-    };
 
     if (!products) {
         notFound()
     }
+
+    const dummyProduct: CartItem = {
+        id: products.id,
+        name: products.heading,
+        price: products.price,
+        quantity: 1,
+        image: products.image,
+    }
+
 
 
     const heading = products.heading || "Asgaard sofa"
@@ -37,19 +30,20 @@ export default async function ProductDetailsPage({ params }: any) {
 
     return (
         <>
-            <div className=' flex '>
+            <div className=' flex bg-[#F9F1E7] flex '>
                 <ReusableBanner
 
                     parents={[{ label: 'Shop', href: '/shop' }]}
+                    breadcrumbPosition='start'
                 />
-                <h1 className='absolute top-41 left-260'>
+                <h1 className='absolute top-41 left-120'>
                     {products.heading}
 
 
                 </h1>
             </div>
 
-            <div className='w-full flex max-w-[1440px] mx-auto bg-white py-10 px-8 gap-12 font-sans'>
+            <div className='w-full flex max-w-[1440px] mx-auto bg-white py-10 px-8 gap-12 font-poppins'>
 
                 {/* LEFT SIDE: Image Gallery Panel */}
                 <div className='flex gap-4 items-start'>
@@ -76,16 +70,16 @@ export default async function ProductDetailsPage({ params }: any) {
 
                 {/* RIGHT SIDE: Product Info Panel  */}
                 <div className='w-full max-w-[606.01px] flex flex-col text-black'>
-                    <h1 className='text-[42px] leading-tight font-normal mb-1'>{heading}</h1>
-                    <p className='text-[24px] font-medium text-[#9F9F9F] mb-3'>{price}</p>
+                    <h1 className='text-[42px] leading-tight font-poppins font-normal mb-1'>{heading}</h1>
+                    <p className='text-[24px] font-medium text-[#9F9F9F] font-poppins mb-3'>{price}</p>
 
                     {/* Rating System Mock */}
                     <div className='flex items-center gap-4 mb-4 text-[13px] text-[#9F9F9F]'>
                         <div className='text-[#FFC700] text-lg flex gap-1'>★★★★★</div>
-                        <span className='border-l border-[#9F9F9F] h-4 pl-4'>5 Customer Reviews</span>
+                        <span className='border-l border-[#9F9F9F] h-4 pl-4 font-poppins'>5 Customer Reviews</span>
                     </div>
 
-                    <p className='text-[13px] leading-[20px] text-black font-normal pr-6 mb-6'>{description}</p>
+                    <p className='text-[13px] font-poppins leading-[20px] text-black font-normal pr-6 mb-6'>{description}</p>
 
                     {/* Attributes: Size Selection */}
                     <div className='mb-4'>
@@ -108,38 +102,30 @@ export default async function ProductDetailsPage({ params }: any) {
                     </div>
 
                     {/* Actions: */}
-                    <div className='flex gap-3 pb-12 border-b border-[#D9D9D9] mb-10'>
+                    <div className='flex  items-center gap-3 pb-12 border-b border-[#D9D9D9] mb-10'>
                         {/* Quantity Selector Counter Toggle */}
-                        <div className='flex items-center justify-between border border-[#9F9F9F] rounded-[10px] w-[123px] h-[64px] px-4 text-base font-medium'>
-                            <button className='text-black hover:text-[#B88E2F] cursor-pointer'>-</button>
-                            <span>1</span>
-                            <button className='text-black hover:text-[#B88E2F] cursor-pointer'>+</button>
-                        </div>
 
-                        {/* Add to Cart CTA */}
-                        {/* <AddToCartButton product={dummyProduct} /> */}
+                        <ProductInteractiveSection product={dummyProduct} />
 
-                        <button className='border  cursor-pointer border-black rounded-[15px] hover:bg-black hover:text-white transition duration-300 font-normal text-[20px] w-[215px] h-[64px]'>
-                            + Compare
-                        </button>
+
                     </div>
 
                     {/*  Summary Section Details */}
                     <div className='flex flex-col gap-3 text-[16px] text-[#9F9F9F] font-normal'>
-                        <div className='flex'>
+                        <div className='flex '>
                             <span className='w-[100px]'>SKU</span>
                             <span className='mr-3'>:</span>
-                            <span className='text-black'>SS001</span>
+                            <span className=' '>SS001</span>
                         </div>
                         <div className='flex'>
                             <span className='w-[100px]'>Category</span>
                             <span className='mr-3'>:</span>
-                            <span className='text-black'>Sofas</span>
+                            <span className=''>Sofas</span>
                         </div>
                         <div className='flex'>
                             <span className='w-[100px]'>Tags</span>
                             <span className='mr-3'>:</span>
-                            <span className='text-black'>Sofa, Chair, Home, Shop</span>
+                            <span className=''>Sofa, Chair, Home, Shop</span>
                         </div>
                         <div className='flex items-center'>
                             <span className='w-[100px]'>Share</span>

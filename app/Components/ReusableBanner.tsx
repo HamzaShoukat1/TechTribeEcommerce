@@ -19,14 +19,15 @@ interface ReusableBannerProps {
     title?: string;
     image?: any;
     parents?: BreadcrumbParent[];
+    breadcrumbPosition?: "center" | "start";
 }
 
-export default function ReusableBanner({ title, image, parents = [] }: ReusableBannerProps) {
+export default function ReusableBanner({ title, image, parents = [], breadcrumbPosition = "center" }: ReusableBannerProps) {
     return (
         <div className="w-full max-w-[1440px] mx-auto">
 
-            <div className={    `relative w-full ${image ? "h-auto" : "h-[170px]"}`}>
-                  {image && (
+            <div className={`relative w-full ${image ? "h-auto" : "h-[170px]"}`}>
+                {image && (
                     <Image
                         src={image}
                         alt="banner-image"
@@ -35,7 +36,12 @@ export default function ReusableBanner({ title, image, parents = [] }: ReusableB
                     />
                 )}
 
-                <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2 w-full px-4 text-center'>
+                <div
+                    className={`absolute top-1/2 -translate-y-1/2 flex flex-col gap-2 w-full px-4 ${breadcrumbPosition === "start"
+                            ? "left-0 items-start text-left px-[60px]"
+                            : "left-1/2 -translate-x-1/2 items-center text-center"
+                        }`}
+                >
                     <h1 className='font-poppins font-bold tracking-normal text-3xl md:text-5xl text-black'>
                         {title}
                     </h1>
@@ -54,7 +60,7 @@ export default function ReusableBanner({ title, image, parents = [] }: ReusableB
                             {parents.map((parent, index) => (
                                 <React.Fragment key={index}>
                                     <BreadcrumbItem>
-                                        <BreadcrumbLink render={<a  href={parent.href} className='hover:text-black transition-colors font-medium'>{parent.label}</a>}>
+                                        <BreadcrumbLink render={<a href={parent.href} className='hover:text-black transition-colors font-medium'>{parent.label}</a>}>
 
                                         </BreadcrumbLink>
                                     </BreadcrumbItem>

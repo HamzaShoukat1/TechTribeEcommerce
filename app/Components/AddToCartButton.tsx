@@ -1,25 +1,22 @@
 "use client";
 
 import { useCart } from "../context/cartContext";
+import type { CartItem } from "../context/cartContext";
 
 type ProductProps = {
-    product: {
-        id: number;
-        heading: string;
-        price: number;
-        image: string;
-    };
+    product: CartItem;
+    quantity: number
 };
 
-export default function AddToCartButton({ product }: ProductProps) {
+export default function AddToCartButton({ product, quantity }: ProductProps) {
     const { addToItem } = useCart();
 
     const handleClick = () => {
         addToItem({
             id: product.id,
-            name: product.heading,
+            name: product.name,
             price: product.price,
-            quantity: 1,
+            quantity: quantity,
             image: product.image,
         });
     };
@@ -27,7 +24,7 @@ export default function AddToCartButton({ product }: ProductProps) {
     return (
         <button
             onClick={handleClick}
-            className="border border-black rounded-[15px] cursor-pointer hover:bg-black hover:text-white transition duration-300 font-normal text-[20px] w-[215px] h-[64px]"
+            className="border border-black font-poppins rounded-[15px] cursor-pointer hover:bg-black hover:text-white transition duration-300 font-normal text-[20px] w-53.75 h-16"
         >
             Add To Cart
         </button>

@@ -58,7 +58,8 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro1,
     heading: "Syltherine",
     paragraph: "Stylish cafe chair",
-    price: "Rp 2.500.000",
+    price: 250000,
+
     cutPrice: "Rp 3.500.000",
   },
   {
@@ -67,7 +68,8 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro2,
     heading: "Leviosa",
     paragraph: "Stylish cafe chair",
-    price: "Rp 2.500.000",
+    price: 250000,
+
   },
   {
     id: 3,
@@ -76,7 +78,8 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro3,
     heading: "Lolito",
     paragraph: "Luxury big sofa",
-    price: "Rp 7.000.000",
+    price: 250000,
+
     cutPrice: "Rp 14.000.000"
 
   },
@@ -87,14 +90,16 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro4,
     heading: "Respira",
     paragraph: "Outdoor bar table and stool",
-    price: "Rp 500.000"
+    price: 250000,
+
   },
   {
     id: 5,
     image: pro5,
     heading: "Grifo",
     paragraph: "Night lamp",
-    price: "Rp 1.500.000"
+    price: 250000,
+
   },
   {
     id: 6,
@@ -103,7 +108,8 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro6,
     heading: "Muggo",
     paragraph: "Small mug",
-    price: "Rp 150.000"
+    price: 250000,
+
   },
   {
     id: 7,
@@ -112,7 +118,8 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro7,
     heading: "Pingky",
     paragraph: "Cute bed set",
-    price: "Rp 7.000.000",
+    price: 250000,
+
     cutPrice: "Rp 14.000.000"
   },
   {
@@ -122,7 +129,8 @@ export const PRODUCT_IMAGE_DATA = [
     image: pro8,
     heading: "Potty",
     paragraph: "Minimalist flower pot",
-    price: "Rp 500.000"
+    price: 250000,
+
   }
 ]
 
