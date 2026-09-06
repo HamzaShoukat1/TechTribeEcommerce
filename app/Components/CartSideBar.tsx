@@ -130,7 +130,7 @@ export default function CartSidebar() {
                 {/* Bottom Buttons */}
                 <div className="  border-t border-[#E5E5E5] px-[26px] py-6 font-poppins cursor-pointer">
 
-                    <div className="flex items-center py-2  cursor-pointer justify-between gap-[14px]">
+                    <div className="flex items-center py-2  cursor-pointer justify-start gap-[14px]">
 
                      <  Link href="/cart" onClick={() => setIsOpen(false)}>
                         <button
@@ -146,11 +146,7 @@ export default function CartSidebar() {
                             Checkout
                         </button>
 
-                        <button
-                            className="w-full  max-w-[135px]  cursor-pointer rounded-full border border-[#111111] px-4 py-2 text-[14px] text-[#111111] transition hover:bg-[#111111] hover:text-white"
-                        >
-                            Comparison
-                        </button>
+                       
 
                     </div>
 
