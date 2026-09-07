@@ -5,14 +5,11 @@ import { FaTrash } from "react-icons/fa";
 import ReusableBanner from "@/app/Components/ReusableBanner";
 import { useCart } from "@/app/context/cartContext";
 import shopPageBanner from "../../public/images/Shop-page-images/Rectangle 1(1).png";
-import ShopBanner from "../../public/images/Shop-page-images/Frame 161.png";
 import UsableSkeleton from "@/app/Components/UsableSkeleton";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function CartPage() {
     const { cart, subtotal, removeItem, isInitialized } = useCart();
-    const router = useRouter();
 
     return (
         <div className="font-poppins bg-white min-h-screen">
