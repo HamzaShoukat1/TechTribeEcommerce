@@ -14,7 +14,7 @@ export { logo, personIcon, cart, heart, search }
 const navItems = [
     { name: "Home", route: "/" },
     { name: "Shop", route: "/shop" },
-    { name: "About", route: "/about" },
+    // { name: "About", route: "/about" },
     { name: "Contact", route: "/contact" },
 ]
 

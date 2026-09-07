@@ -5,21 +5,11 @@ import sectionImage from "../../public/images/scandinavian-interior-mockup-wall-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import {IMAGES_DATA,PRODUCT_IMAGE_DATA,rect36,rect37,rect38,rect39,rect40,rect41,rect43,rect44,rect45} from "../../utils/index"
-
+import { IMAGES_DATA, PRODUCT_IMAGE_DATA, rect36, rect37, rect38, rect39, rect40, rect41, rect43, rect44, rect45 } from "../../utils/index"
+import RoomCarousel from '@/app/Components/RoomCarousal'
 import ProductCard from '@/app/Components/ProductCard'
 
 
-// import carousalImg1 from "../../public/images/carousle/Image.png"
-// import carousalImg2 from "../../public/images/carousle/Rectangle 25.png"
-
-
-
-// const slides = [
-//   { id: 1, img: carousalImg1, num: "01", category: "Bed Room", title: "Inner Peace" },
-//   { id: 2, img: carousalImg2, num: "02", category: "Living Room", title: "Nordic Vibe" },
-//   { id: 3, img: carousalImg1, num: "03", category: "Dining Room", title: "Cozy Space" },
-// ];
 
 
 
@@ -30,7 +20,6 @@ import ProductCard from '@/app/Components/ProductCard'
 
 
 
-// export {  sectionImage }
 
 
 
@@ -132,20 +121,31 @@ export default function Page() {
       </section>
       {/* // furniture picture  */}
 
-      {/* //carousle  */}
-      <div className='w-full max-w-[1440] flex gap-3 items-center mx-auto  justify-between'>
-        <div className='w-full max-w-[422px]  flex flex-col '>
-          <h1 className='font-bold font-poppins text-[40px] leading-[120%] tracking-normal'>50+ Beautiful rooms
-            inspiration</h1>
-          <p className='text-[16px] font-medium leading-[150%] tracking-normal'>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+      {/* //carousle  and left data */}
+ <div className="w-full bg-[#FCF8F3] py-10 md:py-16 overflow-hidden">
+  <div className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-10 px-6 lg:pl-[80px] lg:pr-0">
+    
+    {/* Left Content */}
+    <div className="w-full lg:max-w-[422px] flex flex-col gap-4 shrink-0">
+      <h1 className="font-bold font-poppins text-[32px] sm:text-[40px] leading-[120%] tracking-normal text-[#333333]">
+        50+ Beautiful rooms inspiration
+      </h1>
+      <p className="text-[16px] font-medium leading-[150%] font-poppins max-w-[368px] tracking-normal text-[#616161]">
+        Our designer already made a lot of beautiful prototype of rooms that inspire you
+      </p>
+      <button className="bg-[#B88E2F] text-white w-full sm:w-fit cursor-pointer flex justify-center items-center transition-all px-9 py-4 font-poppins font-semibold text-base rounded-none hover:bg-[#a37d26] mt-2">
+        Explore More
+      </button>
+    </div>
 
-        </div>
+    {/* Right Carousel */}
+    <div className="w-full  lg:flex-1">
+      <RoomCarousel />
+    </div>
 
-        {/* //caorusle here  */}
-        
+  </div>
+</div>
 
-
-      </div>
       {/* 9. Bottom-Right Kitchen Tiles (Rectangle 44) */}
       <section className="w-full max-w-[1799px] space-x-[-39px] space-y-[-39px] mx-auto py-12  overflow-hidden">
 
