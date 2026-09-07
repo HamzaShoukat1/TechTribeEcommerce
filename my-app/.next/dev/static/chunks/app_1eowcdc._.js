@@ -91,7 +91,7 @@ function RoomCarousel() {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 82,
                                         columnNumber: 19
                                     }, this),
                                     isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -105,14 +105,14 @@ function RoomCarousel() {
                                                         children: slide.num
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 105,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "w-[24px] h-[1px] bg-[#616161]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 108,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -120,13 +120,13 @@ function RoomCarousel() {
                                                         children: slide.category
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                        lineNumber: 108,
+                                                        lineNumber: 109,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 104,
                                                 columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -134,24 +134,24 @@ function RoomCarousel() {
                                                 children: slide.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 114,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 91,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                lineNumber: 71,
+                                lineNumber: 72,
                                 columnNumber: 17
                             }, this)
                         }, slide.id, false, {
                             fileName: "[project]/app/Components/RoomCarousal.tsx",
-                            lineNumber: 70,
+                            lineNumber: 71,
                             columnNumber: 15
                         }, this);
                     })
@@ -189,7 +189,7 @@ function RoomCarousel() {
                                 className: "\n                      w-[8px]\n                      h-[8px]\n                      rounded-full\n                      bg-[#B88E2F]\n                    "
                             }, void 0, false, {
                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                lineNumber: 186,
+                                lineNumber: 185,
                                 columnNumber: 19
                             }, this)
                         }, slide.id, false, {

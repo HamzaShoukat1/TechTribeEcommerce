@@ -58,6 +58,7 @@ export default function RoomCarousel() {
           onSwiper={(swiper) => {
             swiperRef.current = swiper
           }}
+
           onSlideChange={(swiper) => {
             setActiveIndex(swiper.realIndex)
           }}
@@ -124,7 +125,6 @@ export default function RoomCarousel() {
                     </div>
                   )}
 
-                  {/* Note: The extra card button arrow code has been removed from here */}
 
                 </div>
               </SwiperSlide>
@@ -132,7 +132,7 @@ export default function RoomCarousel() {
           })}
         </Swiper>
 
-        {/* ================= OUTSIDE NEXT ARROW ================= */}
+        {/*OUTSIDE NEXT ARROW */}
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="
@@ -158,7 +158,7 @@ export default function RoomCarousel() {
           →
         </button>
 
-        {/* ================= PAGINATION ================= */}
+        {/* PAGINATION  */}
         <div className="flex items-center gap-[12px] mt-[24px]">
           {slides.map((slide, index) => {
             const isActive = index === activeIndex
@@ -175,10 +175,9 @@ export default function RoomCarousel() {
                   cursor-pointer
                   transition-all
                   duration-300
-                  ${
-                    isActive
-                      ? 'w-[24px] h-[24px] border border-[#B88E2F] bg-white'
-                      : 'w-[8px] h-[8px] bg-[#D9D9D9]'
+                  ${isActive
+                    ? 'w-[24px] h-[24px] border border-[#B88E2F] bg-white'
+                    : 'w-[8px] h-[8px] bg-[#D9D9D9]'
                   }
                 `}
               >
