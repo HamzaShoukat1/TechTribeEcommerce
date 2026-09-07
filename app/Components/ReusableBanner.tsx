@@ -19,9 +19,10 @@ interface ReusableBannerProps {
     image?: any;
     parents?: BreadcrumbParent[];
     breadcrumbPosition?: "center" | "start";
+    makeLineBigger?: "small" | "large"
 }
 
-export default function ReusableBanner({ title, image, parents = [], breadcrumbPosition = "center" }: ReusableBannerProps) {
+export default function ReusableBanner({ title, image, parents = [], breadcrumbPosition = "center", makeLineBigger = "small" }: ReusableBannerProps) {
     return (
         <div className="w-full  mx-auto">
 
@@ -68,7 +69,18 @@ export default function ReusableBanner({ title, image, parents = [], breadcrumbP
                             ))}
 
                             {/* FIXED: The pipe separator is now safely contained within a BreadcrumbItem structure to keep horizontal alignment unbroken */}
-                            <li className="text-neutral-400 font-light px-1 select-none" aria-hidden="true">|</li>
+                            <li
+                                className={`text-neutral-400 font-light px-1 select-none flex items-center 
+    ${makeLineBigger === "large" ? "text-5xl leading- text-[#9F9F9F]" : "h-4"}`}
+                                aria-hidden="true"
+                            >
+                                |
+                            </li>
+
+
+
+
+
 
                             {/* Current Page Title */}
                             <BreadcrumbItem>

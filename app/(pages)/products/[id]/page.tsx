@@ -35,8 +35,9 @@ export default async function ProductDetailsPage({ params }: any) {
 
                     parents={[{ label: 'Shop', href: '/shop' }]}
                     breadcrumbPosition='start'
+                    makeLineBigger='large'
                 />
-                <h1 className='absolute top-41 left-120'>
+                <h1 className='absolute top-41 left-60'>
                     {products.heading}
 
 
