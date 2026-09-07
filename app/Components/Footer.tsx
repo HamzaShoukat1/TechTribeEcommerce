@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-white px-6 py-12 font-sans md:px-16 lg:px-24 border-t border-gray-200">
+    <footer className="w-full bg-white px-6 py-12 font-sans md:px-16  lg:px-24 border-t border-gray-200">
       {/* Top Main Section */}
-      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-8 md:grid-cols-2 font-poppins lg:grid-cols-4">
         
         {/* Column 1: Brand Info */}
         <div className="flex flex-col gap-8">

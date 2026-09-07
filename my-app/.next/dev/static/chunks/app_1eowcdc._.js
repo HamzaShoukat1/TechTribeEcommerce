@@ -56,9 +56,9 @@ function RoomCarousel() {
     const swiperRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-full max-w-[1211px] ",
+        className: "w-full max-w-[1211px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative w-full max-w-[712px] ",
+            className: "relative w-full max-w-[712px]",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
                     slidesPerView: "auto",
@@ -77,12 +77,12 @@ function RoomCarousel() {
                             className: "!w-[362px]",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: `
-                  relative
-                  w-[362px]
-                  transition-all
-                  duration-500
-                  ${isActive ? 'h-[520px]' : 'h-[435px]'}
-                `,
+                    relative
+                    w-[362px]
+                    transition-all
+                    duration-500
+                    ${isActive ? 'h-[520px]' : 'h-[435px]'}
+                  `,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: slide.img,
@@ -91,11 +91,11 @@ function RoomCarousel() {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 17
+                                        lineNumber: 81,
+                                        columnNumber: 19
                                     }, this),
                                     isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "\n                      absolute\n                    //   bottom-[21px]\n                      left-[565px]\n                       top-[2807px]\n                      w-[238px]\n                      h-[116px]\n                      bg-white/90\n                      flex\n                      flex-col\n                      justify-center\n                    ",
+                                        className: "\n                        absolute\n                        left-[565px]\n                        top-[2807px]\n                        w-[238px]\n                        h-[116px]\n                        bg-white/90\n                        flex\n                        flex-col\n                        justify-center\n                      ",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-2",
@@ -105,122 +105,113 @@ function RoomCarousel() {
                                                         children: slide.num
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                        lineNumber: 123,
-                                                        columnNumber: 23
+                                                        lineNumber: 104,
+                                                        columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "w-[24px] h-[1px] bg-[#616161]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                        lineNumber: 127,
-                                                        columnNumber: 23
+                                                        lineNumber: 107,
+                                                        columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-[14px] text-[#616161]",
                                                         children: slide.category
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                        lineNumber: 129,
-                                                        columnNumber: 23
+                                                        lineNumber: 108,
+                                                        columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                lineNumber: 121,
-                                                columnNumber: 21
+                                                lineNumber: 103,
+                                                columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "\n                        font-poppins\n                        font-semibold\n                        text-[24px]\n                        text-[#333333]\n                        mt-1\n                      ",
+                                                className: "\n                          font-poppins\n                          font-semibold\n                          text-[24px]\n                          text-[#333333]\n                          mt-1\n                        ",
                                                 children: slide.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                                lineNumber: 135,
-                                                columnNumber: 21
+                                                lineNumber: 113,
+                                                columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                        lineNumber: 106,
-                                        columnNumber: 19
-                                    }, this),
-                                    isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "\n                      absolute\n                      bottom-[21px]\n                      left-[238px]\n                      w-[43px]\n                      h-[43px]\n                      bg-[#B88E2F]\n                      text-white\n                      text-[25px]\n                      flex\n                      items-center\n                      justify-center\n                      z-10\n                      cursor-pointer\n                    ",
-                                        children: "→"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                        lineNumber: 155,
-                                        columnNumber: 19
+                                        lineNumber: 90,
+                                        columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                lineNumber: 83,
-                                columnNumber: 15
+                                lineNumber: 71,
+                                columnNumber: 17
                             }, this)
                         }, slide.id, false, {
                             fileName: "[project]/app/Components/RoomCarousal.tsx",
-                            lineNumber: 78,
-                            columnNumber: 13
+                            lineNumber: 70,
+                            columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/app/Components/RoomCarousal.tsx",
-                    lineNumber: 59,
-                    columnNumber: 7
+                    lineNumber: 54,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>swiperRef.current?.slideNext(),
-                    className: "\n          absolute\n          right-[0px]\n          top-[240px]\n          z-30\n          w-[48px]\n          h-[48px]\n          rounded-full\n          bg-white\n          shadow-md\n          flex\n          items-center\n          justify-center\n          text-[#B88E2F]\n          text-[28px]\n          cursor-pointer\n          hover:scale-105\n          transition\n        ",
+                    className: "\n            absolute\n            right-[0px]\n            top-[240px]\n            z-30\n            w-[48px]\n            h-[48px]\n            rounded-full\n            bg-white\n            shadow-md\n            flex\n            items-center\n            justify-center\n            text-[#B88E2F]\n            text-[28px]\n            cursor-pointer\n            hover:scale-105\n            transition\n          ",
                     children: "→"
                 }, void 0, false, {
                     fileName: "[project]/app/Components/RoomCarousal.tsx",
-                    lineNumber: 190,
-                    columnNumber: 7
+                    lineNumber: 136,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "\n          flex\n          items-center\n          gap-[12px]\n          mt-[24px]\n        ",
+                    className: "flex items-center gap-[12px] mt-[24px]",
                     children: slides.map((slide, index)=>{
                         const isActive = index === activeIndex;
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>swiperRef.current?.slideToLoop(index),
                             className: `
-                flex
-                items-center
-                justify-center
-                rounded-full
-                cursor-pointer
-                transition-all
-                duration-300
-
-                ${isActive ? 'w-[24px] h-[24px] border border-[#B88E2F] bg-white' : 'w-[8px] h-[8px] bg-[#D9D9D9]'}
-              `,
+                  flex
+                  items-center
+                  justify-center
+                  rounded-full
+                  cursor-pointer
+                  transition-all
+                  duration-300
+                  ${isActive ? 'w-[24px] h-[24px] border border-[#B88E2F] bg-white' : 'w-[8px] h-[8px] bg-[#D9D9D9]'}
+                `,
                             children: isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "\n                    w-[8px]\n                    h-[8px]\n                    rounded-full\n                    bg-[#B88E2F]\n                  "
+                                className: "\n                      w-[8px]\n                      h-[8px]\n                      rounded-full\n                      bg-[#B88E2F]\n                    "
                             }, void 0, false, {
                                 fileName: "[project]/app/Components/RoomCarousal.tsx",
-                                lineNumber: 254,
-                                columnNumber: 17
+                                lineNumber: 186,
+                                columnNumber: 19
                             }, this)
                         }, slide.id, false, {
                             fileName: "[project]/app/Components/RoomCarousal.tsx",
-                            lineNumber: 233,
-                            columnNumber: 13
+                            lineNumber: 167,
+                            columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/app/Components/RoomCarousal.tsx",
-                    lineNumber: 218,
-                    columnNumber: 7
+                    lineNumber: 162,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/Components/RoomCarousal.tsx",
-            lineNumber: 55,
-            columnNumber: 5
+            lineNumber: 51,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/Components/RoomCarousal.tsx",
-        lineNumber: 52,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }

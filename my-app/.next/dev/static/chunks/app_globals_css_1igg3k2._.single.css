@@ -1710,6 +1710,10 @@
     text-align: right;
   }
 
+  .font-\[\#000000\] {
+    font-family: #000;
+  }
+
   .font-montserrat {
     font-family: var(--font-montserrat);
   }
@@ -1809,6 +1813,11 @@
     font-size: 42px;
   }
 
+  .leading-0 {
+    --tw-leading: 0px;
+    line-height: 0;
+  }
+
   .leading-\[20px\] {
     --tw-leading: 20px;
     line-height: 20px;
@@ -1827,6 +1836,16 @@
   .leading-\[150\%\] {
     --tw-leading: 150%;
     line-height: 150%;
+  }
+
+  .leading-\[au\] {
+    --tw-leading: au;
+    line-height: au;
+  }
+
+  .leading-\[auto\] {
+    --tw-leading: auto;
+    line-height: auto;
   }
 
   .leading-relaxed {
@@ -2413,12 +2432,24 @@
       gap: calc(var(--spacing) * 8);
     }
 
+    .sm\:gap-16 {
+      gap: calc(var(--spacing) * 16);
+    }
+
+    .sm\:gap-20 {
+      gap: calc(var(--spacing) * 20);
+    }
+
     .sm\:p-10 {
       padding: calc(var(--spacing) * 10);
     }
 
     .sm\:py-24 {
       padding-block: calc(var(--spacing) * 24);
+    }
+
+    .sm\:pb-16 {
+      padding-bottom: calc(var(--spacing) * 16);
     }
 
     .sm\:text-4xl {
